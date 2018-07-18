@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/survey_board2"
+    android:orientation="vertical">
+    <!-- TODO 위로 올렸다 내려도 되는지 확인 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp">
+
+        <TextView
+            android:id="@+id/sur_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:text="롱패딩 화이트 VS 블랙"
+            android:textColor="#434343"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- 설문완료에 따라 이미지 변환(pinimage1 -> pinimage2) !-->
+        <ImageView
+            android:id="@+id/sur_pinset"
+            android:layout_width="57dp"
+            android:layout_height="95dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18.6dp"
+            android:background="@drawable/pinimage1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sur_img"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/pinimage_caracter" />
+
+        <TextView
+            android:id="@+id/sur_subTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sur_title"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:text="for All"
+            android:textColor="#8BBDFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sur_subTitle"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                android:id="@+id/tag1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/survey_tag"
+                android:gravity="center"
+                android:text="#패션"
+                android:textColor="#848484"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tag2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tag1_text"
+                android:background="@drawable/survey_tag"
+                android:gravity="center"
+                android:text="#겨울아이템"
+                android:textColor="#848484"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tag3_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tag2_text"
+                android:background="@drawable/survey_tag"
+                android:gravity="center"
+                android:text="#패딩"
+                android:textColor="#848484"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/sur_like_image"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/heart" />
+
+        <TextView
+            android:id="@+id/sur_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="4dp"
+            android:text="185" />
+
+        <ImageView
+            android:id="@+id/sur_total"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/personcheck" />
+
+
+        <TextView
+            android:id="@+id/vote_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="4dp"
+            android:text="150" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="4dp"
+            android:text="/" />
+
+        <TextView
+            android:id="@+id/vote_num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="4dp"
+            android:text="200" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/sur_coin"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/sur_coin_plus"
+                android:background="@drawable/coin" />
+
+            <TextView
+                android:id="@+id/sur_coin_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="5dp"
+                android:text="+2"
+                android:textColor="#848484"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/make_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:background="#8BBDFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="등록"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/make_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/make_layout_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/make_board"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/make_layout_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/make_img_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/coin" />
+
+                <TextView
+                    android:id="@+id/make_tv_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/make_img_coin"
+                    android:text="-20"
+                    android:textColor="#848484"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/make_edit_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="제목"
+                    android:singleLine="true"
+                    android:textColor="#434343"
+                    android:textColorHint="#434343"
+                    android:textCursorDrawable="@null"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/make_edit_sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@null"
+                    android:hint="부연설명"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="#434343"
+                    android:textColorHint="#434343"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/make_layout_tagbox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/make_tagbox2"
+                        android:gravity="center_vertical">
+
+                        <EditText
+                            android:id="@+id/make_edit_tag1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@null"
+                            android:hint="#태그"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:textColor="#434445"
+                            android:textColorHint="#aaaaaa"
+                            android:textCursorDrawable="@null"
+                            android:textSize="12sp" />
+
+                        <ImageButton
+                            android:id="@+id/make_btn_tag_cancel1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/make_cancel"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/make_layout_tagbox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/make_tagbox2"
+                        android:gravity="center_vertical">
+
+                        <EditText
+                            android:id="@+id/make_edit_tag2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@null"
+                            android:hint="#태그"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:textColor="#434445"
+                            android:textColorHint="#aaaaaa"
+                            android:textCursorDrawable="@null"
+                            android:textSize="12sp" />
+
+                        <ImageButton
+                            android:id="@+id/make_btn_tag_cancel2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/make_cancel"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/make_layout_tagbox3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/make_tagbox2"
+                        android:gravity="center_vertical">
+
+                        <EditText
+                            android:id="@+id/make_edit_tag3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@null"
+                            android:hint="#태그"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:textColor="#434445"
+                            android:textColorHint="#aaaaaa"
+                            android:textCursorDrawable="@null"
+                            android:textSize="12sp" />
+
+                        <ImageButton
+                            android:id="@+id/make_btn_tag_cancel3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/make_cancel"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="답변유형"
+                        android:textColor="#434343"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+
+                        <Spinner
+                            android:id="@+id/make_spin_type"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/spinner_background_make"
+                            android:popupBackground="#fdfdfe" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#b9b9b9" />
+
+                <RelativeLayout
+                    android:id="@+id/make_sub_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <fragment
+                        android:id="@+id/make_frag"
+                        android:name="org.sopt21.qnd.Fragment.FragmentMakeEmpty"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:layout="@layout/fragment_make_empty" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

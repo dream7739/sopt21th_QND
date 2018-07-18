@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/declar_image"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/survey_report" />
+
+        <TextView
+            android:id="@+id/declar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="23dp"
+            android:layout_toRightOf="@+id/declar_image"
+            android:text="신고하기"
+            android:textColor="#434343"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/declar_text"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/declar_image"
+            android:background="@drawable/report_box"
+            android:gravity="top"
+            android:padding="15dp"
+            android:hint="신고할 내용을 입력해주세요."
+            android:textColor="#B9B9B9"
+            android:textColorHint="#B9B9B9"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/declar_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/cancel" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/declar_finish"
+        android:layout_width="186dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/signup_button_next"
+        android:text="완료"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="invisible"/>
+</LinearLayout>

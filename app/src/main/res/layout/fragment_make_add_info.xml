@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/make_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#8BBDFF">
+
+        <RelativeLayout
+            android:id="@+id/make_btn_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="22dp"
+                android:background="@drawable/back_white" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/make_btn_back"
+            android:text="회원가입"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/make_layout_title">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/make_board">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="인원"
+                        android:textColor="#434343"
+                        android:textSize="14sp" />
+
+                    <RelativeLayout
+                        android:layout_width="80dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/make2_box1">
+
+                        <EditText
+                            android:id="@+id/frag_edit_personnel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@null"
+                            android:hint="(최대 200)"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:textColor="#434343"
+                            android:textColorHint="#73AFFF"
+                            android:textCursorDrawable="@null"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="유효기간"
+                        android:textColor="#434343"
+                        android:textSize="14sp" />
+
+                    <RelativeLayout
+                        android:layout_width="80dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/make2_box1">
+
+                        <EditText
+                            android:id="@+id/frag_edit_validity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@null"
+                            android:digits="1234567"
+                            android:hint="(최대 7)"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:textColor="#434343"
+                            android:textColorHint="#73AFFF"
+                            android:textCursorDrawable="@null"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_noname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="15dp">
+
+                    <ImageButton
+                        android:id="@+id/frag_btn_noname"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/make_checkbox_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/frag_btn_noname"
+                        android:text="익명"
+                        android:textColor="#434343"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_noname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="2dp"
+                        android:text="익명의 경우, 설문의 참여율이 낮아질 가능성이 있습니다."
+                        android:textColor="#73AFFF"
+                        android:textSize="12sp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/img_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#b9b9b9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="추가설정"
+                    android:textColor="#73AFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp">
+
+                    <ImageButton
+                        android:id="@+id/frag_img_char"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/character" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/frag_img_char"
+                        android:text="항목 당 10코인이 더 필요해요!"
+                        android:textColor="#434343"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp">
+
+                    <ImageButton
+                        android:id="@+id/frag_btn_age"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/make_checkbox_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/frag_btn_age"
+                        android:text="나이"
+                        android:textColor="#434343"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/base"
+                        android:layout_width="80dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="invisible" />
+
+                    <Spinner
+                        android:id="@+id/frag_spin_age1"
+                        android:layout_width="65dp"
+                        android:layout_height="26dp"
+                        android:layout_alignStart="@+id/base"
+                        android:background="@drawable/spinner_background_make"
+                        android:popupBackground="#fdfdfe" />
+
+                    <TextView
+                        android:id="@+id/range"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/frag_spin_age1"
+                        android:text="~"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#b9b9b9"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/frag_spin_age2"
+                        android:layout_width="65dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/range"
+                        android:background="@drawable/spinner_background_make"
+                        android:popupBackground="#fdfdfe" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp">
+
+                    <ImageButton
+                        android:id="@+id/frag_btn_gender"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/make_checkbox_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/frag_btn_gender"
+                        android:text="성별"
+                        android:textColor="#434343"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/frag_spin_gender"
+                        android:layout_width="80dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/spinner_background_make"
+                        android:popupBackground="#fdfdfe" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp">
+
+                    <ImageView
+                        android:id="@+id/frag_img_marriage"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/make_checkbox_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/frag_img_marriage"
+                        android:text="혼인여부"
+                        android:textColor="#B9B9B9"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/spinner_background_make" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp">
+
+                    <ImageView
+                        android:id="@+id/frag_img_job"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/make_checkbox_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/frag_img_job"
+                        android:text="직업"
+                        android:textColor="#B9B9B9"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/spinner_background_make" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp">
+
+                    <ImageView
+                        android:id="@+id/frag_img_edu"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/make_checkbox_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/frag_img_edu"
+                        android:text="학력"
+                        android:textColor="#B9B9B9"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/spinner_background_make" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp">
+
+                    <ImageView
+                        android:id="@+id/frag_img_hometown"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/make_checkbox_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/frag_img_hometown"
+                        android:text="사는지역"
+                        android:textColor="#B9B9B9"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="26dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/spinner_background_make" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/frag_btn_complete"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#8abcfe"
+                    android:text="완료"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

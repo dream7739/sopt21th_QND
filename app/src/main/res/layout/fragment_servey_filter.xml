@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#8BBDFF"
+        >
+        <ImageButton
+            android:id="@+id/filter_back"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/back_white"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/filter_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/filter_back"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="18dp"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:text="필터"
+            android:textColor="#FFFFFFFF"/>
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/survey_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="35dp"
+            android:text="설문상태"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#434343"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="45dp"
+            >
+          <RadioButton
+              android:id="@+id/radio_all"
+              android:text="전체"
+              android:textSize="16sp"
+              android:textColor="#848484"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingLeft="10dp"
+              android:checked="true"
+              android:button="@drawable/radio_check"/>
+
+            <RadioButton
+                android:id="@+id/radio_finish"
+                android:text="완료"
+                android:textSize="16sp"
+                android:textColor="#848484"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/radio_check"/>
+
+            <RadioButton
+                android:id="@+id/radio_unfinish"
+                android:text="미완료"
+                android:textSize="16sp"
+                android:textColor="#848484"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:paddingLeft="10dp"
+                android:button="@drawable/radio_check"/>
+        </RadioGroup>
+            
+        </LinearLayout>
+
+        
+        <ImageView
+            android:layout_width="290dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/line"
+            />
+
+        <TextView
+            android:id="@+id/survey_array"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="35dp"
+            android:text="나열순"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#434343"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:id="@+id/radio_group2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="45dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/radio_recent"
+                    android:text="최신순"
+                    android:textSize="16sp"
+                    android:textColor="#848484"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:paddingLeft="10dp"
+                    android:button="@drawable/radio_check"/>
+
+                <RadioButton
+                    android:id="@+id/radio_popular"
+                    android:text="인기순"
+                    android:textSize="16sp"
+                    android:textColor="#848484"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:paddingLeft="10dp"
+                    android:button="@drawable/radio_check"/>
+
+                </RadioGroup>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

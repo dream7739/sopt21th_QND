@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/make_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#8BBDFF">
+
+        <RelativeLayout
+            android:id="@+id/btn_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="22dp"
+                android:background="@drawable/back_white" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/btn_back"
+            android:text="비밀번호 변경"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_character"
+        android:layout_width="match_parent"
+        android:layout_height="167dp"
+        android:layout_below="@+id/make_layout_title">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/character" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_character"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="60dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_currentpasswd"
+            android:layout_width="250dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/rl_passwd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/signup_box">
+
+            <EditText
+                android:id="@+id/edit_currentpasswd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:hint="현재 비밀번호"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#434343"
+                android:textColorHint="#B9B9B9"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_newpasswd"
+            android:layout_width="250dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/rl_currentpasswd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/signup_box">
+
+            <EditText
+                android:id="@+id/edit_newpasswd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:hint="새 비밀번호"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#434343"
+                android:textColorHint="#B9B9B9"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_cnewpasswd"
+            android:layout_width="250dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/rl_newpasswd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/signup_box">
+
+            <EditText
+                android:id="@+id/edit_cnewpasswd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:hint="새 비밀번호"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#434343"
+                android:textColorHint="#B9B9B9"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_signup_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/signup_botton_next">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:enabled="false"
+            android:text="완료"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>

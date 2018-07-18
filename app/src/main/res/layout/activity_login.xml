@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#73AFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/login_logo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.36">
+
+            <RelativeLayout
+                android:id="@+id/rl_login"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/login_box_idpassword">
+
+                <EditText
+                    android:id="@+id/edit_login_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@null"
+                    android:hint="이메일"
+                    android:text="xogud3125@naver.com"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textCursorDrawable="@null"
+
+                    android:textSize="14sp" />
+                <!--TODO 지워야됨 -->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_passwd"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_box_idpassword">
+
+                <EditText
+                    android:id="@+id/edit_login_passwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@null"
+                    android:hint="비밀번호"
+                    android:inputType="textPassword"
+                    android:text="12345678"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textCursorDrawable="@null"
+
+                    android:textSize="14sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:layout_height="36dp"
+                android:layout_below="@+id/rl_passwd"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="#000"
+                android:elevation="5dp">
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:text="로그인"
+                    android:textColor="#73AFFF"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="9dp"
+            android:layout_weight="3">
+
+            <RelativeLayout
+                android:id="@+id/rl_third"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/tv_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="회원가입"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_find_passwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="비밀번호 찾기"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_easy_login"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_third"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="44dp">
+
+                <View
+                    android:layout_width="87dp"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:background="#fff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="간편로그인"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="87dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="#fff" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/facebook_login"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_easy_login"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_box_facebooklogin" />
+
+                <ImageView
+                    android:id="@+id/facebook_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/login_facebook" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/facebook_logo"
+                    android:text="페이스북 계정으로 로그인"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

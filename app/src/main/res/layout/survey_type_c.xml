@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/survey_atype_board"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <ImageButton
+            android:id="@+id/s3_btn_good"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/heart" />
+
+        <ImageButton
+            android:id="@+id/s3_btn_declar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/s3_btn_good"
+            android:background="#00000000"
+            android:src="@drawable/survey_report" />
+
+        <ImageButton
+            android:id="@+id/s3_btn_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/cancel" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/s3_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="57dp"
+        android:layout_marginRight="57dp"
+        android:gravity="center_horizontal"
+        android:text="Q. 종혁이는 열정맨이다?"
+        android:textColor="#434343"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/s3_text_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:text="이 설문은 종혁이가 열정맨인지 아닌지를 확인하기 위한 설문이다."
+        android:textColor="#B9B9B9"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="62dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/s3_btn_option1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/survey_ctype_circle1" />
+
+            <TextView
+                android:id="@+id/s3_text_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="찬성"
+                android:textColor="#434343"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="62dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/s3_btn_option2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/survey_ctype_circle2" />
+
+            <TextView
+                android:id="@+id/s3_text_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="반대"
+                android:textColor="#434343"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/s3_btn_finish"
+        android:layout_width="186dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/survey_ctype_button"
+        android:text="완료"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+</LinearLayout>

@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/make_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#8BBDFF">
+
+        <RelativeLayout
+            android:id="@+id/btn_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="22dp"
+                android:background="@drawable/back_white" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/btn_back"
+            android:text="신고 내역"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/make_layout_title">
+
+        <ImageView
+            android:id="@+id/img_report_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/report_red" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_report_red"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="신고 누적시, 다음과 같은 과정을 통해 처리됩니다."
+            android:textColor="#FF7373"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="신고 30회 - 참여 제한\n신고 50회 - 포인트 몰수\n신고 100회 - 이용제한"
+            android:textColor="#B9B9B9"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/make_layout_title"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="172dp">
+
+        <TextView
+            android:id="@+id/tv_fix_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내역"
+            android:textColor="#434343"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tv_fix_list"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/line" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/myreport_recycerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_line"
+            android:layout_marginTop="20dp"
+            android:background="#fff" />
+    </RelativeLayout>
+</RelativeLayout>

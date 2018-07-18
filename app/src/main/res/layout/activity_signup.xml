@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+    <RelativeLayout
+        android:id="@+id/make_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#8BBDFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="회원가입"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/signup_profileimage" />
+
+        <!-- 음영 색깔때문에 뒤에 이미지에 검정 선 가는거 해결해야함 -->
+
+        <RelativeLayout
+            android:id="@+id/btn_profile_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:elevation="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/signup_camera" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+        <RelativeLayout
+            android:id="@+id/rl_email"
+            android:layout_marginTop="10dp"
+            android:layout_width="172dp"
+            android:layout_height="36dp"
+            android:layout_alignLeft="@+id/rl_cpasswd"
+            android:background="@drawable/signup_box">
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#434343"
+                android:textCursorDrawable="@null"
+                android:hint="이메일"
+                android:textColorHint="#B9B9B9"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:singleLine="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/btn_duplicate_check"
+            android:layout_width="66dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rl_email"
+            android:layout_alignTop="@+id/rl_email"
+            android:background="@drawable/signup_botton_trans">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="중복확인"
+                android:textColor="#73AFFF"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_passwd"
+            android:layout_below="@+id/rl_email"
+            android:layout_marginTop="10dp"
+            android:layout_width="250dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/signup_box">
+            <EditText
+                android:id="@+id/edit_passwd"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:hint="비밀번호"
+                android:textColor="#434343"
+                android:textCursorDrawable="@null"
+                android:textColorHint="#B9B9B9"
+                android:inputType="textPassword"
+                android:background="@null"
+                android:singleLine="true"/>
+            <TextView
+                android:id="@+id/tv_passwd_hint"
+                android:layout_toRightOf="@+id/edit_passwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#73AFFF"
+                android:layout_centerVertical="true"
+                android:text="(8자리 이상)"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_cpasswd"
+            android:layout_below="@+id/rl_passwd"
+            android:layout_marginTop="10dp"
+            android:layout_width="250dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/signup_box">
+            <EditText
+                android:id="@+id/edit_cpasswd"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:hint="비밀번호 확인"
+                android:textColor="#434343"
+                android:textCursorDrawable="@null"
+                android:textColorHint="#B9B9B9"
+                android:inputType="textPassword"
+                android:background="@null"
+                android:singleLine="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_cnumber"
+            android:layout_below="@+id/rl_cpasswd"
+            android:layout_marginTop="10dp"
+            android:layout_width="193dp"
+            android:layout_height="36dp"
+            android:layout_alignLeft="@+id/rl_cpasswd"
+            android:background="@drawable/signup_box">
+            <EditText
+                android:id="@+id/edit_number"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:hint="인증번호"
+                android:textColor="#434343"
+                android:textCursorDrawable="@null"
+                android:textColorHint="#B9B9B9"
+                android:background="@null"
+                android:singleLine="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_submit"
+            android:layout_width="46dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/rl_cpasswd"
+            android:layout_toRightOf="@+id/rl_cnumber"
+            android:background="@drawable/signup_botton_trans">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전송"
+                android:textColor="#73AFFF"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_confirm"
+            android:layout_width="46dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/rl_cpasswd"
+            android:layout_toRightOf="@+id/rl_cnumber"
+            android:background="@drawable/signup_botton_trans"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="확인"
+                android:textColor="#73AFFF"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_signup_next"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/signup_botton_next"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="다음"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:enabled="false"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

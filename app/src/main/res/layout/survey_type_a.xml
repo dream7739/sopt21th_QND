@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/s1_btn_good"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/survey_atype_heart" />
+
+        <ImageButton
+            android:id="@+id/s1_btn_declar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/s1_btn_good"
+            android:background="@drawable/survey_atype_report" />
+
+        <ImageButton
+            android:id="@+id/s1_btn_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/cancel" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/s1_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="54dp"
+        android:layout_marginRight="54dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="Q. 가장 좋아하는 음식은? "
+        android:textColor="#434343"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/s1_text_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_horizontal"
+        android:text="가장 좋아하는 음식은?"
+        android:textColor="#B9B9B9"
+        android:textSize="12sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/s1_btn_option1"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/survey_atype_box2"
+                android:gravity="center"
+                android:textColor="#434343"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/s1_btn_option2"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/survey_atype_box2"
+                android:gravity="center"
+                android:textColor="#434343"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/s1_btn_option3"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/survey_atype_box2"
+                android:gravity="center"
+                android:textColor="#434343"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/s1_btn_option4"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:background="@drawable/survey_atype_box2"
+                android:gravity="center"
+                android:textColor="#434343"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/s1_btn_finish"
+            android:layout_width="186dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/survey_btype_button"
+            android:text="완료"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/s1_text_duple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="21dp"
+            android:text="*복수응답가능"
+            android:textColor="#73afff"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+    </LinearLayout>
+
+</LinearLayout>

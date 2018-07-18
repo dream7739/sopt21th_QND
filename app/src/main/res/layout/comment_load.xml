@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/comment_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/cancel" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="326dp"
+        android:layout_below="@+id/top"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/comment_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/line1"
+        android:layout_marginTop="15dp">
+
+        <EditText
+            android:id="@+id/comment_write"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:background="@drawable/survey_comment_box"
+            android:gravity="center_vertical"
+            android:hint="댓글을 입력해주세요"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="#434343"
+            android:textColorHint="#B9B9B9"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/comment_finish"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="32dp"
+            android:layout_toRightOf="@+id/comment_write"
+            android:background="@drawable/survey_comment_button"
+            android:text="입력"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+</RelativeLayout>
